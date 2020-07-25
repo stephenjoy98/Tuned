@@ -1,0 +1,214 @@
+﻿/* NO WHITE SPACES AND FULL SCREEN*/
+html {
+    height: 100%;
+    font-family: Product-Sans-Regular;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+}
+/**************************************************************************************************************************************************************************/
+/*BUTTON*/
+.button1 {
+    background-color: #B71C1C;
+    color: white;
+    border: 2px solid #B71C1C;
+    border-radius: 5px;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1:hover {
+    transition-duration: 0.4s;
+    background-color: #FF0000;
+    color: white;
+    border: 2px solid #FF0000;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+}
+.button1:active {
+    background-color: #FFFFFF;
+    color: #FF0000;
+}
+/**************************************************************************************************************************************************************************/
+/*BUTTON*/
+.button2 {
+    background-color: #B71C1C;
+    color: white;
+    border: 2px solid #B71C1C;
+    border-radius: 5px; 
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button2:hover {
+    transition-duration: 0.4s;
+    background-color: #FF0000;
+    color: white;
+    border: 2px solid #FF0000;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+}
+.button2:active {
+    background-color: #FFFFFF;
+    color: #FF0000;
+}
+/**************************************************************************************************************************************************************************/
+/*LINK BUTTON*/
+.linkbutton:link, .linkbutton:visited {
+    background-color: #B71C1C;
+    color: white;
+    border: 2px solid #B71C1C;
+    border-radius: 5px;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.linkbutton:hover {
+    transition-duration: 0.4s;
+    background-color: #FF0000;
+    color: white;
+    border: 2px solid #FF0000;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+}
+.linkbutton:active {
+    background-color: #FFFFFF;
+    color: #FF0000;
+}
+/**************************************************************************************************************************************************************************/
+/*LINK BUTTON 2*/
+.linkbutton2:link, .linkbutton2:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.linkbutton:hover {
+    color: #B71C1C;
+}
+.linkbutton:active {
+    color: #FF0000;
+}
+/**************************************************************************************************************************************************************************/
+/*DROP DOWN*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbutton {
+    background-color: #B71C1C;
+    color: white;
+    border: 2px solid #B71C1C;
+    border-radius: 5px;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3C3C3C;
+    border-radius: 5px;
+    min-width: 82px;
+    transition-duration: 0.4s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #FF0000;
+    border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {
+    transition-duration: 0.4s;
+    display: block;
+}
+.dropdown:hover .dropbutton {
+    transition-duration: 0.4s;
+    background-color: #FF0000;
+}
+/**************************************************************************************************************************************************************************/
+/*MENU BAR*/
+.btn {
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2F2F2F;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #B71C1C;
+}
+/**************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'robotoblack';
+    src: url('Roboto-Black-webfont.eot');
+    src: url('Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'), url('Roboto-Black-webfont.woff2') format('woff2'), url('Roboto-Black-webfont.woff') format('woff'), url('Roboto-Black-webfont.ttf') format('truetype'), url('Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Product-Sans-Regular';
+    src: url('Product-Sans-Regular.ttf');
+    src: url('Product-Sans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Product-Sans-Bold';
+    src: url('Product-Sans-Bold.ttf');
+    src: url('Product-Sans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Product-Sans-Italic';
+    src: url('Product-Sans-Italic.ttf');
+    src: url('Product-Sans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Product-Sans-Bold-Italic';
+    src: url('Product-Sans-Bold-Italic.ttf');
+    src: url('Product-Sans-Bold-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

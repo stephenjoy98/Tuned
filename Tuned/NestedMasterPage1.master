@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage1.master.cs" Inherits="Tuned.NestedMasterPage1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style13 {
+            text-align: left;
+        }
+        .auto-style15 {
+            text-align: center;
+        }
+        .auto-style16 {
+            color: white;
+        }
+        .auto-style17 {
+            width: 145px;
+            text-align: center;
+        }
+        .auto-style19 {
+            width: 50px;
+            text-align: center;
+        }
+        .auto-style20 {
+            width: 49px;
+            text-align: center;
+        }
+        .auto-style21 {
+            width: 80%;
+        }
+        .auto-style22 {
+            width: 75%;
+        }
+    </style>
+    </asp:Content>
+
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <asp:MultiView ID="MultiView1" runat="server">
+        
+        <asp:View ID="Login" runat="server">
+            <div class="dropdown">
+                <button class="dropbutton">
+                    Login
+                </button>
+                <div class="dropdown-content">
+                    <a href="../UserLogin.aspx">User</a>
+                    <a href="../SellerLogin.aspx">Seller</a>
+                    <a href="../InstructorLogin.aspx">Instructor</a>
+                </div>
+            </div>
+        </asp:View>
+
+        <asp:View ID="NormalLogOut" runat="server">
+            <div class="auto-style13">
+                <table align="right" class="auto-style22">
+                    <tr>
+                        <td class="auto-style15"><span class="auto-style16">Welcome <strong>
+                            <asp:Label ID="Label1" runat="server"></asp:Label>
+                            </strong>!</span></td>
+                        <td class="auto-style19">
+                            <asp:Button ID="Profile1" runat="server" CssClass="button2" Text="Profile" OnClick="Profile1_Click" />
+                        </td>
+                        <td class="auto-style19">
+                            <asp:Button ID="LogOut1" runat="server" CssClass="button2" Text="LogOut" OnClick="LogOut1_Click" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </asp:View>
+
+        <asp:View ID="UserLogOut" runat="server">
+
+            <div class="auto-style13">
+                <table align="right" class="auto-style21">
+                    <tr>
+                        <td class="auto-style17"><span class="auto-style16">Welcome <strong>
+                            <asp:Label ID="Label2" runat="server"></asp:Label>
+                            </strong>!</span></td>
+                        <td class="auto-style19">
+                            <asp:Button ID="Profile2" runat="server" CssClass="button2" Text="Profile" OnClick="Profile2_Click" />
+                        </td>
+                        <td class="auto-style19">
+                            <asp:Button ID="Cart" runat="server" CssClass="button2" Text="Cart" OnClick="Cart_Click" />
+                        </td>
+                        <td class="auto-style20">
+                            <asp:Button ID="LogOut2" runat="server" CssClass="button2" Text="LogOut" OnClick="LogOut2_Click" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </asp:View>
+
+    </asp:MultiView>
+</asp:Content>
+
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

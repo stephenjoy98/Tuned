@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Tuned.Main" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Page-Enter" content="Alpha(opacity=100)">  
+   <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+   <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+    <asp:ContentPlaceHolder ID="head1" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            height: 650px;
+        }
+        .auto-style2 {
+            width: 100%;
+            height: 100%;
+        }
+        .auto-style3 {
+            height: 57%;
+            background-color: #FFFFFF;
+            vertical-align:top;
+        }
+        .auto-style4 {
+            height: 10%;
+            background-color: #2F2F2F;
+            text-align: center;
+        }
+        .auto-style5 {
+            height: 10%;
+            min-height: 80px;
+            max-height: 80px;
+            background-color: #1D1D1D;
+            vertical-align: top;
+            
+        }
+        .auto-style6 {
+            height: 1%;
+            background-color: #B71C1C;
+            vertical-align: middle;
+            text-align: right;
+        }
+        .auto-style9 {
+            color: #FFFFFF;
+            vertical-align: central;
+        }
+        .auto-style10 {
+            width: 20%;
+            text-align: left;
+        }
+        .auto-style11 {
+            width: 46%;
+            }
+        .auto-style12 {
+            width: 100%;
+            height: 60px;
+        }
+    </style>
+</head>
+<body style="height: 100%">
+<!--       _
+       .__(.)< (MEOW)
+        \___)   
+~~~~~~~~~~~~~~~~~~-->
+    <form id="form1" runat="server" class="auto-style1" style="height: 100%">
+        <table class="auto-style2" style="height: 100%">
+            <tr>
+                <td class="auto-style6">
+                    <h4 class="auto-style9">Contact Number: 022 - 12345678/89</h4>
+                    <span class="glyphicon-heart"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <table class="auto-style12">
+                        <tr>
+                            <td class="auto-style10">
+                                <asp:Image ID="Image1" runat="server" Height="51px" ImageUrl="~/tuned-logo.jpg" Width="87px" ImageAlign="Middle" />
+                            </td>
+                            <td class="auto-style11">
+                                <ul>
+                                    <li><a href="../Home.aspx">Home</a></li>
+                                    <li><a href="../Products.aspx">Products</a></li>
+                                    <li><a href="../Instructors.aspx">Instructors</a></li>
+                                    <li><a href="../AboutUs.aspx">About us</a></li>
+                                </ul>
+                                <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+                                <script>
+                                    $(function(){
+                                        $('a').each(function(){
+                                            if ($(this).prop('href') == window.location.href) {
+                                                $(this).addClass('active'); $(this).parents('li').addClass('active');
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </td>
+                            <td>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="text-align: left">
+                    <table style="width:1283px; height: 100%;">
+                        <tr>
+                            <td style="height: 21px; width: 427px"></td>
+                            <td style="height: 21px; width: 428px"></td>
+                            <td style="height: 21px; width: 428px"></td>
+                        </tr>
+                        <tr>
+                            <td style="height: 33px; width: 427px">&nbsp;</td>
+                            <td style="height: 33px; width: 428px; text-align: center"><strong>
+                    <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/AboutUs.aspx" style="color: #FFFFFF; text-decoration: none; font-size: medium" CssClass="linkbutton2">About us</asp:LinkButton>
+                    </strong><span style="color: #FFFFFF"><strong><span style="font-size: medium">&nbsp;| Follow us:</span></strong>&nbsp;
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="20px" Width="20px" ImageUrl="~/Images/Logos/iconfinder_facebook_317746.png" PostBackUrl="https://www.facebook.com/" />
+                    &nbsp;
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="20px" Width="20px" ImageUrl="~/Images/Logos/iconfinder_Instagram_1298747.png" PostBackUrl="https://www.instagram.com/" />
+                    &nbsp;
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="20px" Width="20px" ImageUrl="~/Images/Logos/iconfinder_pinterest_317731.png" PostBackUrl="https://in.pinterest.com/" />
+                    &nbsp;
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="20px" Width="20px" ImageUrl="~/Images/Logos/iconfinder_twitter_294655.png" PostBackUrl="https://twitter.com/" />
+                    </span></td>
+                            <td style="height: 33px; width: 428px">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="height: 34px; width: 427px">&nbsp;</td>
+                            <td style="height: 34px; width: 428px; text-align: center">
+                                <asp:Image ID="Image2" runat="server" Height="15px" Width="15px" ImageUrl="~/Images/Logos/iconfinder_copywrite_3669366-128.png" style="color: #FFFFFF" />
+                                <span style="color: #FFFFFF">&nbsp;2019 Copyright</span></td>
+                            <td style="height: 34px; width: 428px">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="height: 21px; width: 427px"></td>
+                            <td style="height: 21px; width: 428px; text-align: center">
+                                </td>
+                            <td style="height: 21px; width: 428px"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
